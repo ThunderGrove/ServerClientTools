@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 
 public class Server {
     public static void main(String[] args) throws Exception {
-        try (var listener = new ServerSocket(58901)) {
+        try (var listener = new ServerSocket(8000)) {
             System.out.println("Tic Tac Toe Server is Running...");
             var pool = Executors.newFixedThreadPool(200);
             while (true) {
